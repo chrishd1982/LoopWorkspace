@@ -55,6 +55,9 @@ jobs:
 
           # Loopkit: chrishd1982-patch-1: Lyumjev bedre verdier
           curl https://github.com/chrishd1982/Loopkit/commit/d363a5fb98a0d72c32ed7385d12c3365e859dc6e.patch | git apply -v --directory=Loopkit
+  
+          # Loop: chrishd1982-patch-2: automatisk bolus 0.9
+          curl https://github.com/chrishd1982/Loop/commit/d120de4b885631a9759832079c4bccec65535a65.patch | git apply -v --directory=Loop
      
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
